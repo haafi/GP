@@ -1,0 +1,10 @@
+\select@language {ngerman}
+\contentsline {section}{\numberline {1}Physikalischer Hintergrund}{2}
+\contentsline {section}{\numberline {2}Aufgaben}{2}
+\contentsline {subsubsection}{\nonumberline Aufgabe 1}{2}
+\contentsline {subsubsection}{\nonumberline Aufgabe 2}{2}
+\contentsline {section}{\numberline {3}Ger\IeC {\"a}teliste}{2}
+\contentsline {section}{\numberline {4}Nennfehler und Literaturwerte}{2}
+\contentsline {section}{\numberline {5}Messprotokoll}{2}
+\contentsline {section}{\numberline {6}Auswertung}{2}
+\contentsline {section}{\numberline {7}Fazit}{2}
