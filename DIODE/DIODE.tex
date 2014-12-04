@@ -425,9 +425,9 @@
 % Automatische Titelseite
 
 \subject{Protokoll}
-\title{Isentropenindex \\ \normalsize Physikalisches Grundpraktikum \\ Free University Berlin}
-\date{2.12.2014}
-\author{Christoph Haaf - christoph.haaf@fu-berlin.de  \\ Zacharias V. Fisches - zacharias.vf@gmail.com \\ Tutor: Dr. Stefan Mebs}
+\title{Diode \\ \normalsize Physikalisches Grundpraktikum \\ Free University Berlin}
+\date{3.12.2014}
+\author{Zacharias V. Fisches \\\&\\ Katja Ober}
 
 
 \maketitle
@@ -462,80 +462,47 @@
 %\input{content/Auswertung.tex}
 
 \section{Physikalischer Hintergrund}
-\subsubsection{Wärmekapazität}
-Die Wärmekapazität eines Körpers ist definiert als die Wärmemenge $Q$, die der Körper bei einer Temperaturänderung um $\Delta T$ aufnimmt oder abgibt:
-\begin{equation}
-C = \frac{Q}{\Delta T}
-\end{equation}
-Diese Formel ist allerdings nur eine Durchschnittsgröße und die Wärmekapazität kann von der Temperatur abhängen, sodass im einzelnen ein Limes benutzt werden muss:
-\begin{equation}
-\nonumber
-C(T) = \lim\limits_{\Delta T \rightarrow 0} \frac{Q}{\Delta T}
-\end{equation}
-Außerdem hängt die Energie $Q$ im allgemeinen von Druck und Volumen ab, sodass man $C_p$ und $C_V$ als Wärmekapazität bei konstantem Druck bzw. konstantem Volumen definiert. Bezogen auf die Masse oder die Stoffmenge ergeben sich die \emph{spezifische Wärmekapazität}:
-\begin{equation}
-\nonumber
-c = \frac{C}{m}
-\end{equation}
-und mit der Stoffmenge $n$ die \emph{molare Wärmekapazität}:
-\begin{equation}
-\nonumber
-C_{mol} = \frac{C}{n} 
-\end{equation}
-Analog folgt $c_p$ und $c_V$ und wir definieren das Verhältnis als \emph{Adiabatenexponent}:
-\begin{equation}
-\kappa = \frac{c_p}{c_V}
-\end{equation}
-\subsubsection{Poisson Gleichungen}
-Der \emph{erste Hauptsatz der Thermodynamik} besagt, dass die einem System zugeführte Wärme $\delta Q$ und Arbeit (hier: Volumenarbeit $dW = -p\cdot dV$) die Zunahme seiner inneren Energie $dU$ ausmacht:
-\begin{equation}
-dU = \delta Q - p\cdot dV 
-\end{equation}
-Für einen adiabatischen Prozess ist $\delta Q = 0$ und für ein ideales Gas gilt $dU = C_V dT$ und die \emph{thermische Zustandsgleichung idealer Gase}:
-\begin{equation}
-p\cdot V = n\cdot R_m\cdot T,
-\end{equation}
-wobei $n$ die Stoffmenge und $R_m$ die molare Gaskonstante ist.
-Durch einsetzen erhält man:
-\begin{equation}
-\nonumber
-\frac{1}{T}dT = -\frac{nR_m}{C_V}\frac{1}{V}dV
-\end{equation}
-Aufintegration beider Seiten und einsetzen von $nR_m = C_p - C_V$ liefert sofort:
-\begin{equation}\nonumber
-\ln T + \frac{C_p - C_V}{C_V}\ln V = const
-\end{equation}
-und nach Einsetzen von $\kappa$:
-\[
-\ln (TV^{\kappa - 1}) = const\]
-\[\Longrightarrow TV^{\kappa - 1} = const\]
-Nochmaliges verwenden von (3) liefert die \emph{Poisson Gleichung}:
-\[\frac{pV}{nR_m}V^{\kappa-1}=const\]
-\begin{equation}
-\Longrightarrow pV^\kappa = const
-\end{equation}
+\subsubsection{Diode}
+Halbleiterdioden werden durch p-n-dotierte Halbleiterschichten, oder mit einem Metall-Halbleiter-Übergang realisiert. Bei der Dotierung werden die Halbleiterkristalle mit anderen Atomen verunreinigt und dadurch kann ein Elektronenüberschuss bzw. ein Lochüberschuss (p) erzeugt werden. Durch Zusammenbringen einer p-Schicht und einer n-Schicht entsteht zwischen den Schichten eine Spannung, die isolierend wirkt. Die freien Ladungsträger gleichen sich in der Grenzschicht aus, allerdings werden durch die Spannung weitere Ladungsträger daran gehindert diese Zone zu durchqueren und die Diode wirkt isolierend.
 
-\subsubsection{Clemens-Desormes Methode}
-Die Methode dient der experimentellen Bestimmung von $\kappa$ eines Gases.
-Die Idee ist, durch geschicktes Messen des Drucks eines Gases, die schwierige Messung von kleinen Temperaturänderungen vermeiden zu können.
-\emph{Adiabatisch} und \emph{reversible} Zustandsänderungen, d.h. solche, die thermisch isoliert und ohne Erzeugung von Entropie ablaufen werden durch die \emph{Poisson Gleichungen} beschrieben:
-\begin{equation}
-p\cdot V^\kappa = const
-\end{equation}
-\begin{equation}
-p^{1-\kappa} T^\kappa = const
-\end{equation}
-Bei der Methode von Clemens-Desormes wird praktisch ein mit Gas bei einem Druck $p_1 > p_A$ befüllter Behälter auf Zimmertemperatur ins thermische Gleichgewicht gebracht, wobei $p_A$ der Umgebungsdruck ist. Danach wird der Druck durch Öffnen des Behälters schnell auf Außendruck $p_A$ gebracht. Die Temperaturabsenkung wäre schwierig direkt zu messen, darum wird nun der Behälter verschlossen und das Gas bei gleichem Volumen (\emph{isochor} wieder ins thermische Gleichgewicht gebracht.
+Wird eine externe Spannung angelegt, so kompensiert diese je nach Polung die Spannung zwischen den Schichten. Diese Richtung der Diode heißt Durchlassrichtung.
+
+Bei entgegengesetzter Polung wird die Diode nicht leitend, solange eine kritische Sperrspannung nicht überschritten wird. Diese Sperrspannung ist allerdings relativ hoch.
+\subsubsection{Gleichrichter}
+Man kann sich diese Eigenschaft der Diode zunutze machen, um einen einfachen Gleichrichter zu bauen:
+
+\emph{Abb: Einweggleichrichter}
+\vspace{5 cm}
+
+
+Um auch die 'negative' Spannung gleichzurichten und nicht nur abzuschneiden kann das Design zum sog. \emph{Brückengleichrichter} verbessert werden. Danach kann man optional noch einen Kondensator verwenden, die die Spannung glättet indem er bei hoher Spannung Energie aufnimmt und diese bei niedriger Spannung wieder abgibt:
+
+\emph{Abb: Brückengleichrichter}
+\vspace{8 cm}
+
+
+\newpage
 \section{Aufgaben}
+\emph{Strom- und Spannungskennlinien einer Diode}
 \subsubsection{Aufgabe 1}
-Bestimmung des Verhältnisses der spezifischen Wärmen $\frac{c_p}{c_V} = \kappa$ für Luft nach der Methode von \emph{Clemens-Desormes}.
+Messung der Strom- und Spannungskennlinie einer Diode sowohl strom- als auch Spannungsrichtig. Auftragen und fitten der Messwerte durch die \emph{Shockley Gleichung}.
 \subsubsection{Aufgabe 2}
-Bestimmung des Wertes $\kappa$ für ein einatomiges (Argon), ein zweiatomiges ($N_2$) und ein dreiatomiges Gas ($CO_2$) durch Messung der Eigenfrequenzen eines Gasoszillators.
-Vergleich der Ergebnisse untereinander und mit den erwarteten Werten aus der kinetischen Gastheorie für ein ideales Gas.
+Aufbau einer \emph{Einweggleichrichterschaltung} und einer \emph{Graetzschaltung}. Messung der Ausgangsspannung mit einem Multimeter und Diskussion der Ergebnisse.
+
+Mit welcher Zusatzschaltung kann die Welligkeit des Signals reduziert werden?
+
+\newpage
 \section{Geräteliste}
+Fehler siehe andere Protokolle aus dem E-Block.
+
+\begin{itemize}
+\item Voltcraft VC920 (grau)
+\item Fluke 175 (gelb)
+\item Spannungsquelle Blanko QJ-3003XE
+\item Widerstände, Dioden, Kabel
+\end{itemize}
 \section{Nennfehler und Literaturwerte}
 \section{Messprotokoll}
-Please see inserted page.
 \section{Auswertung}
 \section{Fazit}
 
