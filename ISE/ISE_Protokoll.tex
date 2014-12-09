@@ -486,7 +486,7 @@ Analog folgt $c_p$ und $c_V$ und wir definieren das Verhältnis als \emph{Adiaba
 \begin{equation}
 \kappa = \frac{c_p}{c_V}
 \end{equation}
-\subsubsection{Poisson Gleichungen}
+\subsubsection{Adiabengleichung}
 Der \emph{erste Hauptsatz der Thermodynamik} besagt, dass die einem System zugeführte Wärme $\delta Q$ und Arbeit (hier: Volumenarbeit $dW = -p\cdot dV$) die Zunahme seiner inneren Energie $dU$ ausmacht:
 \begin{equation}
 dU = \delta Q - p\cdot dV 
@@ -514,7 +514,25 @@ Nochmaliges verwenden von (3) liefert die \emph{Poisson Gleichung}:
 \begin{equation}
 \Longrightarrow pV^\kappa = const
 \end{equation}
-
+\subsubsection{Kappa \& Freiheitsgrade}
+Aus dem Äquipartitionstheorem folgt, dass sich die Energie eines Gases gleich auf die Freiheitsgrade verteilt. Für ein einatomiges ideales Gas gilt daher:
+\begin{equation}\nonumber
+E = \frac{1}{2}mv^2 = \frac{1}{2}m(v_x^2 + v_y^2 + v_z^2)
+\end{equation}
+Es kommen also drei Freiheitsgrade pro Atom vor, daher ist die mittlere Energie je Atom:
+\begin{equation}\nonumber
+<E> = \frac{3}{2}k_BT
+\end{equation}
+Daraus folgt nach Differentiation nach der Temperatur für ein Gas von $N$ Teilchen: $C_V = \frac{3}{2}Nk_BT$ und allgemein pro mol:
+\begin{equation}
+c_V = \frac{f}{2}N_Ak_B
+\end{equation}
+Wir verwenden weiterhin $c_p - c_V = R$ und $R = N_Ak_B$. Daraus folgt dann für $\kappa$:
+\[\kappa = \frac{c_p}{c_V} = \frac{R + c_V}{c_V}\]
+\[ = \frac{\frac{f}{2}N_Ak_B + N_Ak_B}{\frac{f}{2}N_Ak_B} = \frac{\frac{f}{2}N_Ak_B + \frac{2}{2}N_Ak_B}{\frac{f}{2}N_Ak_B}\]
+\begin{equation}
+\Longleftrightarrow \kappa = \frac{f+2}{f}
+\end{equation}
 \subsubsection{Clemens-Desormes Methode}
 Die Methode dient der experimentellen Bestimmung von $\kappa$ eines Gases.
 Die Idee ist, durch geschicktes Messen des Drucks eines Gases, die schwierige Messung von kleinen Temperaturänderungen vermeiden zu können.
@@ -537,6 +555,12 @@ Vergleich der Ergebnisse untereinander und mit den erwarteten Werten aus der kin
 \section{Messprotokoll}
 Please see inserted page.
 \section{Auswertung}
+\subsubsection{Aufgabe 1}
+Wir messen drei verschiedene Höhen im Druckmanometer, und setzen in die Messgleichung zur Bestimmung von $\kappa$ ein:
+\begin{equation}
+\kappa = \frac{dp_a}{dp_a + dp_i}\approx \frac{\Delta h_1}{\Delta h_1 - \Delta h_3}
+\end{equation}
+\subsubsection{Aufgabe 2}
 \section{Fazit}
 
 \end{document}
