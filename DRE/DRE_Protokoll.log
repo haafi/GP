@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.12.11)  11 DEC 2014 18:58
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.12.11)  12 DEC 2014 00:40
 entering extended mode
 **DRE_Protokoll.tex
 (F:\Users\Christoph\Documents\GitHub\GP\DRE\DRE_Protokoll.tex
@@ -1548,7 +1548,7 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 
 
 
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}] [2] [3] [4]
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}] [2] [3]
 
 Package caption Warning: Unused \captionsetup[table] on input line 197.
 See the caption package documentation for explanation.
@@ -1561,7 +1561,7 @@ See the caption package documentation for explanation.
 Package caption Warning: Unused \captionsetup[sub] on input line 210.
 See the caption package documentation for explanation.
 
-[5] (F:\Users\Christoph\Documents\GitHub\GP\DRE\DRE_Protokoll.aux)
+[4] (F:\Users\Christoph\Documents\GitHub\GP\DRE\DRE_Protokoll.aux)
 
  *File List*
 scrartcl.cls    2013/12/19 v3.12 KOMA-Script document class (article)
@@ -1702,16 +1702,16 @@ RS)
 
  ) 
 Here is how much of TeX's memory you used:
- 18909 strings out of 493921
- 362545 string characters out of 3147269
- 448187 words of memory out of 3000000
+ 18885 strings out of 493921
+ 362293 string characters out of 3147269
+ 447187 words of memory out of 3000000
  21746 multiletter control sequences out of 15000+200000
- 89815 words of font info for 114 fonts, out of 3000000 for 9000
+ 88772 words of font info for 102 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  46i,12n,54p,10426b,378s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Program Fil
-es/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program Files/MiKTeX 2.9/fonts/e
-nc/dvips/lm/lm-mathsy.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program Files/M
+iKTeX 2.9/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Program Files/MiKTeX 2.9/fonts/e
+nc/dvips/lm/lm-rm.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy
 .enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmbx12.pfb><C:/Program 
 Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi10.pfb><C:/Program Files/MiKTeX 2.9/
 fonts/type1/public/lm/lmmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
@@ -1721,11 +1721,10 @@ eX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
 public/lm/lmri10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmss10.
 pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmss12.pfb><C:/Program F
 iles/MiKTeX 2.9/fonts/type1/public/lm/lmss17.pfb><C:/Program Files/MiKTeX 2.9/f
-onts/type1/public/lm/lmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
-/lm/lmsy8.pfb>
-Output written on DRE_Protokoll.pdf (5 pages, 235955 bytes).
+onts/type1/public/lm/lmsy10.pfb>
+Output written on DRE_Protokoll.pdf (4 pages, 210506 bytes).
 PDF statistics:
- 76 PDF objects out of 1000 (max. 8388607)
+ 69 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  33281 words of extra memory for PDF output out of 35830 (max. 10000000)
 

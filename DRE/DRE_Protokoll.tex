@@ -463,89 +463,57 @@
 
 \section{Physikalischer Hintergrund}
 \subsubsection{Drehbewegung starrer Körpert}
-Eine Menge von Massepunkten, die fest miteinander verbunden sind (nicht verformbar), wird als starrer Körper bezeichnet. Die Drehbewegung (Rotation) wird durch die Winkelgeschwindigkeit $\varphi beschrieben$ und ist Abhängig vom Drehwinkel $\varpi$ und der Zeit t.
+Eine Menge von Massepunkten, die fest miteinander verbunden sind (nicht verformbar), wird als starrer Körper bezeichnet. Die Drehbewegung (Rotation) wird durch die Winkelgeschwindigkeit $\varphi$ beschrieben und ist Abhängig vom Drehwinkel $\varpi$ und der Zeit t.
 \subsubsection{Drehmoment}
 Wenn eine Kraft auf einen Hebelarm wirkt, erzeugt dies ein Drehmoment
 \begin{equation}
 \vec{M}=\vec{F}\times\vec{r}
 \end{equation}
-Diese Formel ist allerdings nur eine Durchschnittsgröße und die Wärmekapazität kann von der Temperatur abhängen, sodass im einzelnen ein Limes benutzt werden muss:
+\subsubsection{Drehmoment Rotationsbewegung}
+Für eine Rotationsbewegung um eine feste Achse gilt
 \begin{equation}
-\nonumber
-C(T) = \lim\limits_{\Delta T \rightarrow 0} \frac{Q}{\Delta T}
+\vec{M}=I\cdot \dot{\vec{\omega}}
 \end{equation}
-Außerdem hängt die Energie $Q$ im allgemeinen von Druck und Volumen ab, sodass man $C_p$ und $C_V$ als Wärmekapazität bei konstantem Druck bzw. konstantem Volumen definiert. Bezogen auf die Masse oder die Stoffmenge ergeben sich die \emph{spezifische Wärmekapazität}:
+\subsubsection{Drehimpuls - Drehmoment}
+Die Ableitung des Dehimpuls nach der Zeit ergibt das Drehmoment
 \begin{equation}
-\nonumber
-c = \frac{C}{m}
+\vec{M}=\frac{d\vec{L}}{dt}
 \end{equation}
-und mit der Stoffmenge $n$ die \emph{molare Wärmekapazität}:
+\subsubsection{Trägheitsmoment}
+Das Trägheitsmoment gibt an, wie träge ein drehbar gelagerter Körper gegenüber der Änderung seines Bewegungszustandes ist.
 \begin{equation}
-\nonumber
-C_{mol} = \frac{C}{n} 
+I = m\cdot r^{2}
 \end{equation}
-Analog folgt $c_p$ und $c_V$ und wir definieren das Verhältnis als \emph{Adiabatenexponent}:
+\subsubsection{Steinerscher Satz}
+Wenn der Schwerpunkt nicht der Drehmittelpunkt ist kommt der sogenannte Steinaranteil dazu (d = Entfernung zwischen Drehpunkt und Schwerpunkt)
 \begin{equation}
-\kappa = \frac{c_p}{c_V}
+I=I+d\cdot m^{2}
 \end{equation}
-\subsubsection{Adiabengleichung}
-Der \emph{erste Hauptsatz der Thermodynamik} besagt, dass die einem System zugeführte Wärme $\delta Q$ und Arbeit (hier: Volumenarbeit $dW = -p\cdot dV$) die Zunahme seiner inneren Energie $dU$ ausmacht:
+\subsubsection{Zeitabhängigkeit des Drehwinkels}
+da $\vec{F} \perp$ zu $\vec{r}$ ist kann auf die Vektorpfeile verzichtet werden
+\\\
+Setzt man (1) und (2) gleich und stellt nach $\dot{\omega}$ um
 \begin{equation}
-dU = \delta Q - p\cdot dV 
+\dot{\omega}=\frac{r\cdot f}{I}
 \end{equation}
-Für einen adiabatischen Prozess ist $\delta Q = 0$ und für ein ideales Gas gilt $dU = C_V dT$ und die \emph{thermische Zustandsgleichung idealer Gase}:
+und das ganze 2 mal Integrieren
 \begin{equation}
-p\cdot V = n\cdot R_m\cdot T,
+\varphi_{(t)} = \frac{r\cdot F}{2I}t^{2}+\omega_{0}t + \varphi_{0}
 \end{equation}
-wobei $n$ die Stoffmenge und $R_m$ die molare Gaskonstante ist.
-Durch einsetzen erhält man:
+\subsubsection{Zeitabhängigkeit des Drehwinkels}
+da $\vec{F} \perp$ zu $\vec{r}$ ist kann auf die Vektorpfeile verzichtet werden
+\\\
+Setzt man (1) und (2) gleich und stellt nach $\dot{\omega}$ um
 \begin{equation}
-\nonumber
-\frac{1}{T}dT = -\frac{nR_m}{C_V}\frac{1}{V}dV
+\dot{\omega}=\frac{r\cdot f}{I}
 \end{equation}
-Aufintegration beider Seiten und einsetzen von $nR_m = C_p - C_V$ liefert sofort:
-\begin{equation}\nonumber
-\ln T + \frac{C_p - C_V}{C_V}\ln V = const
-\end{equation}
-und nach Einsetzen von $\kappa$:
-\[
-\ln (TV^{\kappa - 1}) = const\]
-\[\Longrightarrow TV^{\kappa - 1} = const\]
-Nochmaliges verwenden von (3) liefert die \emph{Poisson Gleichung}:
-\[\frac{pV}{nR_m}V^{\kappa-1}=const\]
+\subsubsection{Zeitabhängigkeit des Drehwinkels}
+da $\vec{F} \perp$ zu $\vec{r}$ ist kann auf die Vektorpfeile verzichtet werden
+\\\
+Setzt man (1) und (2) gleich und stellt nach $\dot{\omega}$ um
 \begin{equation}
-\Longrightarrow pV^\kappa = const
+\dot{\omega}=\frac{r\cdot f}{I}
 \end{equation}
-\subsubsection{Kappa \& Freiheitsgrade}
-Aus dem Äquipartitionstheorem folgt, dass sich die Energie eines Gases gleich auf die Freiheitsgrade verteilt. Für ein einatomiges ideales Gas gilt daher:
-\begin{equation}\nonumber
-E = \frac{1}{2}mv^2 = \frac{1}{2}m(v_x^2 + v_y^2 + v_z^2)
-\end{equation}
-Es kommen also drei Freiheitsgrade pro Atom vor, daher ist die mittlere Energie je Atom:
-\begin{equation}\nonumber
-<E> = \frac{3}{2}k_BT
-\end{equation}
-Daraus folgt nach Differentiation nach der Temperatur für ein Gas von $N$ Teilchen: $C_V = \frac{3}{2}Nk_BT$ und allgemein pro mol:
-\begin{equation}
-c_V = \frac{f}{2}N_Ak_B
-\end{equation}
-Wir verwenden weiterhin $c_p - c_V = R$ und $R = N_Ak_B$. Daraus folgt dann für $\kappa$:
-\[\kappa = \frac{c_p}{c_V} = \frac{R + c_V}{c_V}\]
-\[ = \frac{\frac{f}{2}N_Ak_B + N_Ak_B}{\frac{f}{2}N_Ak_B} = \frac{\frac{f}{2}N_Ak_B + \frac{2}{2}N_Ak_B}{\frac{f}{2}N_Ak_B}\]
-\begin{equation}
-\Longleftrightarrow \kappa = \frac{f+2}{f}
-\end{equation}
-\subsubsection{Clemens-Desormes Methode}
-Die Methode dient der experimentellen Bestimmung von $\kappa$ eines Gases.
-Die Idee ist, durch geschicktes Messen des Drucks eines Gases, die schwierige Messung von kleinen Temperaturänderungen vermeiden zu können.
-\emph{Adiabatisch} und \emph{reversible} Zustandsänderungen, d.h. solche, die thermisch isoliert und ohne Erzeugung von Entropie ablaufen werden durch die \emph{Poisson Gleichungen} beschrieben:
-\begin{equation}
-p\cdot V^\kappa = const
-\end{equation}
-\begin{equation}
-p^{1-\kappa} T^\kappa = const
-\end{equation}
-Bei der Methode von Clemens-Desormes wird praktisch ein mit Gas bei einem Druck $p_1 > p_A$ befüllter Behälter auf Zimmertemperatur ins thermische Gleichgewicht gebracht, wobei $p_A$ der Umgebungsdruck ist. Danach wird der Druck durch Öffnen des Behälters schnell auf Außendruck $p_A$ gebracht. Die Temperaturabsenkung wäre schwierig direkt zu messen, darum wird nun der Behälter verschlossen und das Gas bei gleichem Volumen (\emph{isochor} wieder ins thermische Gleichgewicht gebracht.
 \section{Aufgaben}
 \subsubsection{Aufgabe 1}
 Bestimmung des Verhältnisses der spezifischen Wärmen $\frac{c_p}{c_V} = \kappa$ für Luft nach der Methode von \emph{Clemens-Desormes}.
