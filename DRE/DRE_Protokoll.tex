@@ -425,9 +425,9 @@
 % Automatische Titelseite
 
 \subject{Protokoll}
-\title{Isentropenindex \\ \normalsize Physikalisches Grundpraktikum \\ Free University Berlin}
-\date{2.12.2014}
-\author{Christoph Haaf - christoph.haaf@fu-berlin.de  \\ Zacharias V. Fisches - zacharias.vf@gmail.com \\ Tutor: Dr. Stefan Mebs}
+\title{Gleichmäßig beschleunigte Drehbewegung \\ \normalsize Physikalisches Grundpraktikum \\ Free University Berlin}
+\date{12.12.2014}
+\author{Christoph Haaf - christoph.haaf@fu-berlin.de  \\ Zacharias V. Fisches - zacharias.vf@gmail.com \\ Tutor: Stefan Ulonska}
 
 
 \maketitle
@@ -462,10 +462,12 @@
 %\input{content/Auswertung.tex}
 
 \section{Physikalischer Hintergrund}
-\subsubsection{Wärmekapazität}
-Die Wärmekapazität eines Körpers ist definiert als die Wärmemenge $Q$, die der Körper bei einer Temperaturänderung um $\Delta T$ aufnimmt oder abgibt:
+\subsubsection{Drehbewegung starrer Körpert}
+Eine Menge von Massepunkten, die fest miteinander verbunden sind (nicht verformbar), wird als starrer Körper bezeichnet. Die Drehbewegung (Rotation) wird durch die Winkelgeschwindigkeit $\varphi beschrieben$ und ist Abhängig vom Drehwinkel $\varpi$ und der Zeit t.
+\subsubsection{Drehmoment}
+Wenn eine Kraft auf einen Hebelarm wirkt, erzeugt dies ein Drehmoment
 \begin{equation}
-C = \frac{Q}{\Delta T}
+\vec{M}=\vec{F}\times\vec{r}
 \end{equation}
 Diese Formel ist allerdings nur eine Durchschnittsgröße und die Wärmekapazität kann von der Temperatur abhängen, sodass im einzelnen ein Limes benutzt werden muss:
 \begin{equation}
@@ -553,109 +555,16 @@ Vergleich der Ergebnisse untereinander und mit den erwarteten Werten aus der kin
 \section{Geräteliste}
 \section{Nennfehler und Literaturwerte}
 \section{Messprotokoll}
-Please see inserted pages.
+Please see inserted page.
 \section{Auswertung}
-\subsection{Aufgabe 1}
-Drei Höhen wurden im Druckmanometer der Apparatur gemessen. Zunächst wurde der Druck im Volumen der Apparatur erhöht und das Manometer im thermischen Gleichgewicht abgelesen ($h_1$). Danach wurde das Druck schnell auf einen beliebigen Wert abgelassen und schnell abgelesen ($h_2$). Nachdem sich das thermische Gleichgewicht wieder eingestellt hatte wurde $h_3$ abgelesen. zur Auswertung werden nur die relativen Höhen $dh_1$ und $dh_3$ benötigt.
-
-Die erhaltenen Größen werden zur Auswertung in die Messgleichung zur Bestimmung von $\kappa$ eingesetzt:
+\subsubsection{Aufgabe 1}
+Wir messen drei verschiedene Höhen im Druckmanometer, und setzen in die Messgleichung zur Bestimmung von $\kappa$ ein:
 \begin{equation}
-\kappa = \frac{dp_a}{dp_a + dp_i}\approx \frac{dh_1}{dh_1 - dh_3}
+\kappa = \frac{dp_a}{dp_a + dp_i}\approx \frac{\Delta h_1}{\Delta h_1 - \Delta h_3}
 \end{equation}
-Dabei bezeichnet $dh_i$ die relativen Messgrößen bezeichnet:
-\[dh_1 = h_1 - h_2\]
-\[dh_3 = h_3 - h_2\]
-
-Durch bilden des mit den Fehlern gewichteten Mittelwertes der Messreihen ergibt sich $\kappa$ zu:
-\begin{equation}
-\kappa = 1,23 \pm 0,02
-\end{equation}
-\subsubsection{Fehlerbetrachtung}
-Wir schätzen Ablesefehler auf der Höhenskala ab mit:
-\[\Delta h_1 = \Delta h_3 = 1 mm\]
-\[\Delta h_2 = 2mm\]
-Somit ergeben sich die Fehler der \emph{relativen Höhen} zu:
-\[\Delta dh = \Delta dh_1 = \Delta dh_2 = \sqrt{(\Delta h_1)^2 + (\Delta h_2)^2}\]
-Der Fehler der Messgleichung ergibt sich nach Gauß zu:
-\begin{equation}
-\Delta\kappa = \Delta dh \frac{\sqrt{dh_1^2 + dh_3^2}}{(dh_1 -dh_3)^2}
-\end{equation}
-Der Fehler für Kappa wurde ebenfalls über die Messreihen gemittelt.
-\[ \Longrightarrow\Delta \kappa = 0,2\]
-\subsection{Aufgabe 2}
-Es wurden Schwingungszeiten der Kolben nach der \emph{Methode nach Flammersfeld-Rüchert} für verschiedene Gase gemessen. Messreihen von jeweils $100$ Perioden $\tau$ wurden aufgezeichnet und zur Bestimmung von $\kappa$ in die Messgleichung eingesetzt:
-\begin{equation}
-\kappa = \frac{4\pi^2}{\tau^2}\frac{mV}{pS^2}
-\end{equation}
-Dabei ist $S$ die Querschnittsfläche des Kolbens, $p$ der Umgebungsdruck und $\tau$ die Schwingungsdauer.
-Die Werte für die verschiedenen Gase wurden über die Messdaten gemittelt. Für $CO_2$ wurden drei verschiedene Messreihen gemacht, wobei die Stoppuhr nach verschiedenen Methoden und von verschiedenen Personen bedient wurde. Es wird die Messreihe der Methode mit kleinster Streuung der Messdaten verwendet und die anderen zwei Messreihen nur der Vollständigkeit halber angegeben.
-
-Der Fehler von $\kappa$ ergibt sich nach Gauß zu:
-\begin{equation}
-\Delta \kappa = 2\pi\sqrt{
-(\frac{1}{\tau^2}\frac{V}{pS^2}\Delta m)^2 + 
-(\frac{1}{\tau^2}\frac{m}{pS^2}\Delta V)^2 + 
-(\frac{-1}{\tau^2}\frac{mV}{p^2S^2}\Delta p)^2 + 
-(\frac{-2}{\tau^2}\frac{mV}{pS^3}\Delta S)^2 + 
-(\frac{-2}{\tau^3}\frac{mV}{pS^2}\Delta \tau)^2
-}
-\end{equation}
-
-Die Ergebnisse sind in der Tabelle aufgeführt, wobei der Fettgedruckte Wert der oben erwähnte Beste ist, der die kleinste Streuung in $\tau$ aufweißt:
-
-\vspace{0,5 cm}
-\begin{tabular}{|c|c|}
-\hline 
-Gas & $\kappa$ \\ 
-\hline 
-$CO_2$ & $1,29 \pm 0.02$ \\ 
-\hline 
-$CO_2$ &  $\textbf{ 1,276} \pm \textbf{0.007}$ \\ 
-\hline 
-$CO_2$ & $1,279 \pm 0.007$ \\ 
-\hline 
-$N$ & $1,366\pm 0,007$  \\ 
-\hline
-$Ar$ & $1,53\pm 0.01$ \\
-\hline 
-\end{tabular} 
+\subsubsection{Aufgabe 2}
 \section{Fazit}
-$CO_2 = 1,29$ bei Raumtemperatur
-$N_2 = 1.4$
-$Ar = 1.67$
+
 \end{document}
 %% Dokument ENDE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
